@@ -1,4 +1,4 @@
-
+%http://zhaoxuhui.top/blog/2018/03/13/RelationBetweenQ4&R&Euler.html
 % for right arm
 
 A = [  0.9349618,  0.3147725, -0.1635992;
