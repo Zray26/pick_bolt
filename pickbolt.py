@@ -4,17 +4,17 @@ from hrclib_readonly.hrclib_client_v6 import odyssey_Interface
 import geometry_msgs.msg 
 pick_pos_dict={'h': (9.853695701167453e-06, -0.6027460694313049), 'lin': 0.4585753381252289, 'l': (-0.13635384781205717, 0.9114743399306715, 0.850791817648235, 1.2031456067289128, -0.3104654609270394, -1.3138586727237413, -0.8174240070861964), 'r': (0.2505741638044654, -0.9006784175037083, -0.4091691351442108, -1.670779516757796, 0.6212879185982039, 1.0429657882244618, -2.4777225202159308)}
 import math
-# class temp_pickbolt_client(object):
-#     def __init__(self):
-#         rospy.init_node('transform_subscriber', anonymous= True)
-#         rospy.Subscriber("/marker",geometry_msgs.msg.Transform,self.marker_CallBack)
+class temp_pickbolt_client(object):
+    def __init__(self):
+        rospy.init_node('transform_subscriber', anonymous= True)
+        rospy.Subscriber("/marker",geometry_msgs.msg.Transform,self.marker_CallBack)
         
-#         self.msg=None
-#     def marker_CallBack(self,msg):
-#         print(msg)
-#         self.msg=msg
+        self.msg=None
+    def marker_CallBack(self,msg):
+        print(msg)
+        self.msg=msg
 
-# temp_pickbolt_client.marker_CallBack()
+temp_pickbolt_client.marker_CallBack()
 
 if __name__=="__main__":
     rospy.init_node("Pick_Bolt_Test")
